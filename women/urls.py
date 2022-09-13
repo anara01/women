@@ -21,5 +21,7 @@ from core.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('women/', include('core.urls')), # http://127.0.0.1:800/women/cats/
+    path('', include('core.urls')),
 ]
+
+handler404 = pageNotFound
